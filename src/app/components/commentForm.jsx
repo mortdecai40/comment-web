@@ -7,8 +7,8 @@ import { InputTextarea } from 'primereact/inputtextarea';
 const CommentForm = ({ newComment, setNewComment, handleComment }) => {
     return (
         <form onSubmit={handleComment}>
-            <div className="p-fluid">
-                <div className="p-field space-x-2 flex flex-col m-2">
+            <div className="p-fluid text-slate-800">
+                <div className="p-field space-x-2 flex flex-col m-2 ">
                     <InputText
                         placeholder='Name'
                         type='text'

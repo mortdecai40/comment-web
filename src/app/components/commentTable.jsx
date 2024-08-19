@@ -11,7 +11,7 @@ const CommentTable = ({ comments, loading, actionDelete }) => {
             loading={loading}
             tableStyle={{ minWidth: '50rem' }}
             paginator
-            className='custom-table overflow-x-scroll'
+            className='custom-table overflow-x-scroll text-slate-800'
             rows={15}
         >
             <Column field="name" header="Name" />

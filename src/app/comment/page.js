@@ -2,7 +2,7 @@
 "use client"
 import React, { useState } from 'react';
 import CommentTable from '../components/commentTable'; 
-import CommentForm from '../components/commentForm'; 
+import CommentForm from '../components/CommentForm'; 
 import { useComments } from '../hooks/useComment';
 import { Dialog } from 'primereact/dialog';
 import { MdDeleteOutline } from "react-icons/md";
@@ -48,13 +48,13 @@ function Page() {
     return (
         <>
         <Header/>
-            <div className='h-screen xs:p-4 xl:p-14 bg-slate-300'>
+            <div className='h-full xs:p-4 xl:p-14 bg-slate-300'>
                 {error && <p>Error: {error}</p>}
                 <div className='xs:px-5 md:px-14 xl:px-28 bg-white py-6 rounded-lg'>
                     <input
                         type='text'
                         name='search'
-                        className='w-full h-10 p-2 focus:border-blue-500 border-2 outline-none rounded-lg'
+                        className='w-full h-10 p-2 focus:border-blue-500 border-2 outline-none rounded-lg text-slate-800'
                         placeholder='Search...'
                         value={searchTerm || ''}
                         onChange={(e) => setSearchTerm(e.target.value)}
