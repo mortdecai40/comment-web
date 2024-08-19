@@ -1,7 +1,7 @@
 // pages/Page.js
 "use client"
 import React, { useState } from 'react';
-import CommentTable from '../components/commentTable'; 
+import CommentTable from '../components/CommentTable'; 
 import CommentForm from '../components/CommentForm'; 
 import { useComments } from '../hooks/useComment';
 import { Dialog } from 'primereact/dialog';
