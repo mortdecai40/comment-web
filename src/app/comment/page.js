@@ -6,7 +6,7 @@ import CommentForm from '../components/CommentForm';
 import { useComments } from '../hooks/useComment';
 import { Dialog } from 'primereact/dialog';
 import { MdDeleteOutline } from "react-icons/md";
-import { ConfirmDialog } from 'primereact/confirmdialog';
+import { ConfirmDialog } from 'primereact/confirmdialog'; 
 import Header from '../ui/header';
 
 function Page() {
