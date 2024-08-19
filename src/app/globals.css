@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-table .p-datatable-tbody > tr {
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+}
+
+.custom-table .p-datatable-tbody > tr:last-child {
+  border-bottom: none; /* Remove border for the last row */
+}
+.custom-table .p-datatable-thead > tr > th {
+  background-color: #f0f0f0; /* Light grey background color */
+  color: #444444; /* Dark grey text color (optional) */
+  /* padding: 5px; */
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 50px;
+}
