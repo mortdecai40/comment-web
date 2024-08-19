@@ -1,8 +1,8 @@
 // pages/Page.js
 "use client"
 import React, { useState } from 'react';
-import CommentTable from '../components/CommentTable'; 
-import CommentForm from '../components/CommentForm'; 
+import CommentTable from '../components/commentTable'; 
+import CommentForm from '../components/commentForm'; 
 import { useComments } from '../hooks/useComment';
 import { Dialog } from 'primereact/dialog';
 import { MdDeleteOutline } from "react-icons/md";
