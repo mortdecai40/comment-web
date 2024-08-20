@@ -2,8 +2,8 @@
 "use client"
 import React, { useState } from 'react';
 import CommentTable from '../components/commentTable'; 
-import CommentForm from '../components/commentForm'; 
 import { useComments } from '../hooks/useComment';
+import CommentForm from '../components/commentForm'; 
 import { Dialog } from 'primereact/dialog';
 import { MdDeleteOutline } from "react-icons/md";
 import { ConfirmDialog } from 'primereact/confirmdialog'; 
