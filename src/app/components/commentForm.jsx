@@ -7,12 +7,12 @@ import { InputTextarea } from 'primereact/inputtextarea';
 const CommentForm = ({ newComment, setNewComment, handleComment }) => {
     return (
         <form onSubmit={handleComment}>
-            <div className="p-fluid text-slate-800">
+            <div className="p-fluid ">
                 <div className="p-field space-x-2 flex flex-col m-2 ">
                     <InputText
                         placeholder='Name'
                         type='text'
-                        className='border rounded-md h-9 p-2 focus:outline-blue-500'
+                        className='border rounded-md text-slate-800 h-9 p-2 focus:outline-blue-500'
                         id='name'
                         value={newComment.name || ''}
                         onChange={(e) =>
@@ -26,7 +26,7 @@ const CommentForm = ({ newComment, setNewComment, handleComment }) => {
                         id="email"
                         type="email"
                         placeholder='Email'
-                        className='border rounded-md h-9 p-2 focus:outline-blue-500'
+                        className='border rounded-md text-slate-800 h-9 p-2 focus:outline-blue-500'
                         value={newComment.email || ''}
                         onChange={(e) => setNewComment({ ...newComment, email: e.target.value })}
                         required
@@ -36,7 +36,7 @@ const CommentForm = ({ newComment, setNewComment, handleComment }) => {
                     <InputTextarea
                         placeholder='Comment'
                         id="comment"
-                        className='border rounded-md p-2 focus:outline-blue-500'
+                        className='border rounded-md p-2 text-slate-800 focus:outline-blue-500'
                         value={newComment.body || ''}
                         onChange={(e) => setNewComment({ ...newComment, body: e.target.value })}
                         required

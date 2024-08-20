@@ -42,11 +42,11 @@ function LoginPage() {
               Welcome back you've been missed!
             </p>
           </div>
-          <form onSubmit={handleLogin} className="space-y-6 text-slate-800">
+          <form onSubmit={handleLogin} className="space-y-6 ">
             <div className="">
               <InputText
                 id="username"
-                className="border p-1 w-full h-12 rounded-lg px-3 outline-none "
+                className="border p-1 w-full h-12 rounded-lg px-3 outline-none text-slate-800 "
                 placeholder="Username"
                 value={username  || ''}
                 onChange={(e) => setUsername(e.target.value)}
@@ -56,7 +56,7 @@ function LoginPage() {
             <div className="p-field">
               <InputText
                 id="password"
-                className="border p-1 w-full h-12 rounded-lg px-3 outline-none "
+                className="border p-1 w-full h-12 rounded-lg px-3 outline-none text-slate-800"
                 placeholder="Password"
                 type="password"
                 value={password  || ''}
